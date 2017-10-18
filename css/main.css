@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+}
+# wrapper{
+    width: 800px;
+    margin: 0 auto;
+/*    0 AUTO 沒有空隙且自動置中*/
+}
+div#nav ul{
+    padding-left:50px;
+}
+/*若只有ul則所有ul往左移*/
+/*CLASS是一個.*/
+#banner,#nav,#content,#supporting,#footer{
+    padding: 0px;
+}
+#banner {background-color: aqua;
+    width: 600px;
+    height: 50px;
+    float:none;
+    clear: both;
+    position: fixed;
+    margin-left: 200px;
+    /*隨著視窗飄來飄去*/
+    
+    
+}
+
+#nav {background-color: azure;
+    width: 200px;
+    height: 600px;
+    float: left;    
+    margin-top: 50px;
+/*banner的漂浮讓nav往上，用margintop往下拉*/
+}
+
+#nav li{
+    display:block;
+    background-color:darkorange;
+    margin-top: 5px;
+    padding: 5px;
+/*add two lines here*/
+}
+#nav li a{
+text-decoration: none;
+color: black;
+}
+
+#nav li:hover{
+    background-color: bisque;
+
+}
+#nav li a:hover{
+    color: white;
+}
+
+#content {
+    background-color: antiquewhite;
+    width: 500px;
+    height: inherit;
+    float: left;
+    margin-top: 50px;
+    
+}
+
+#supporting {
+    background-color:azure;
+    width: 100px;
+    height: 600px;
+    float: left;
+    clear: right;
+    margin-top: 50px;
+
+}
+
+div.img {
+    margin: 5px;
+    padding: 5px;
+/*    border: 1px solid gray;*/
+    height: auto;
+    width: auto;  
+    float: left;
+    text-align: center;
+}
+
+div.img img {
+/*    display: inline;*/
+    margin: 5px;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+/*    transform: translate(-50%, -50%);*/
+    border: 1px solid #FFFFF;
+    object-fit: cover;
+}
+
+div.img a:hover img {
+    border:1px solid darkgray;
+}
+
+div.img a {
+    text-decoration: none;
+}
+
+
+
+#footer {
+    background-color: beige;
+    width: 800px;
+    height: 200px;
+    float: none;
+    clear: both;
+}
+
+.container{
+    padding-left: 59px;
+}
+
+.item{
+    padding-top: 50;
+    margin-top:-50; 
+}
